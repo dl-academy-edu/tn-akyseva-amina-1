@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Document</title>
+    <title>Home page</title>
 </head>
 <body>
     <header>
-        <img src="img/Union.svg" alt="">
+        <a href="/">
+            <img src="img/Union.svg" alt="">
+        </a>
         <nav>
             <ul>
                 <li>
@@ -25,7 +27,7 @@
             <a href="#">
                 <img src="img/XMLID1397.png" alt="">
         </div>
-        <a href="">Contact Us</a>
+        <a href="contact.html">Contact Us</a>
     </header>
 
     <main>
@@ -195,11 +197,55 @@
     <p>Company Rating</p>
         <img src="img/Group.png" alt="">
     <p>Copyright © 2018 Dlk • Design Life Kids</p>
-    <div>
-        <a href="#">Web Design — Direct Line Development</a>
-    </div>
+    <a href="#">Web Design — Direct Line Development</a>
 
     </footer>
 
+    <section>
+        <h2>Contact</h2>
+        <form action="#">
+            <div>
+                <label class="">
+                    <span>Name</span>
+                    <input type="text" class="" placeholder="Ivan Ivanov">
+                </label>
+            </div>
+            <div>
+                <div>
+                    <label class="">
+                        <span>Phone</span>
+                        <input type="tel" class="">
+                    </label>
+                </div>
+                <div>
+                    <label class="">
+                        <span>Email</span>
+                        <input type="email" class="">
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label class="">
+                    <span>Message</span>
+                    <textarea name="" cols="30" rows="10" class=""></textarea>
+                </label>
+            </div>
+
+            <fieldset>
+                <legend hidden>Agreement</legend>
+                <ul>
+                    <li>
+                        <label class="">
+                            <input type="checkbox" class="">
+                            <span>By clicking on the button, you consent to the processing of your personal data</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 </body>
 </html>
