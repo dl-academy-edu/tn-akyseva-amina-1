@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
     <header>
@@ -11,12 +16,12 @@
             <img src="img/Union.svg" alt="">
         </a>
         <nav>
-            <ul>
+            <ul class="undotted">
                 <li>
                     <a href="#">Blog</a>
                 </li>
                 <li>
-                    <a href="#">Catalog</a>
+                    <a href="catalog.html">Catalog</a>
                 </li>
                 <li>
                     <a href="#">About Us</a>
@@ -35,7 +40,7 @@
             <h1>Category Products</h1>
             <a href="#">Home</a>
             <a href="#">Catalog</a>
-            <ul>
+            <ul class="undotted">
                 <li>
                     <a href="#">APPAREL KIDS</a>
                 </li>
@@ -65,10 +70,10 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div>
-            <h3>Navigation</h3>
-            <ul>
+            <h3 class="fonts">Navigation</h3>
+            <ul class="undotted">
                 <li>
                     <a href="#">About Us</a>
                 </li>
@@ -90,8 +95,8 @@
             </ul> 
         </div> 
         <div>
-            <h3>Customer Information</h3>
-            <ul>
+            <h3 class="fonts">Customer Information</h3>
+            <ul class="undotted">
                 <li>
                     <a href="#">Contact Us</a>
                 </li>
@@ -113,8 +118,20 @@
             </ul>
         </div>
         <div>
-            <h3>Connect</h3>
-            <ul>
+            <h3 class="fonts">Connect</h3>
+            <form action="#">
+                <div>
+                    <div>
+                        <label class="">
+                            <span>Email</span>
+                            <input type="text" class="">
+                        </label>
+                    </div>
+                </div>
+    
+                <button type="submit">Join</button>
+            </form>
+            <ul class="undotted">
                 <li>
                     <a href="#">
                         <img src="img/socil/Facebook.svg" alt="">
@@ -137,14 +154,12 @@
                 </li>
             </ul>    
         </div>
-        <p>Company Rating</p>
+        <p class="text">Company Rating</p>
             <img src="img/Group.png" alt="">
-        <p>Copyright © 2018 Dlk • Design Life Kids</p>
-        <div>
-            <a href="#">Web Design — Direct Line Development</a>
-        </div>
+        <p class="text">Copyright © 2018 Dlk • Design Life Kids</p>
+        <a href="#" class="Ablack">Web Design — Direct Line Development</a>
     
-        </footer>
+        </footer>    
 
 </body>
 </html>
