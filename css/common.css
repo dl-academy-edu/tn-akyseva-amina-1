@@ -1,0 +1,49 @@
+body {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+a {
+    text-decoration: none;
+    color: #1E0606;
+}
+
+.header .menu {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.undotted {
+    list-style-type: none;
+}
+
+.button {
+    background: #000000;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.footer {
+    background: #434343;
+}
+
+.footer .fonts {
+    color: #AAAAAA;
+}
+
+.footer a , .text {
+    color: #FFFFFF;
+}
+
+.footer .Ablack {
+    color: #A2A2A2;
+}

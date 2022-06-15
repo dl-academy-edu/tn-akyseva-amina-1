@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact  Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
     <header>
@@ -11,12 +16,12 @@
             <img src="img/Union.svg" alt="">
         </a>
         <nav>
-            <ul>
+            <ul class="undotted">
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="blog.html">Blog</a>
                 </li>
                 <li>
-                    <a href="#">Catalog</a>
+                    <a href="catalog.html">Catalog</a>
                 </li>
                 <li>
                     <a href="#">About Us</a>
@@ -34,7 +39,7 @@
         <section>
         <h1>Contact  Us</h1>
         <a href="#">Home</a>
-        <a href="#">Catalog</a>
+        <p>Contact us</p>
 
             <form action="#">
                 <div>
@@ -67,7 +72,7 @@
 
                 <fieldset>
                     <legend hidden>Agreement</legend>
-                    <ul>
+                    <ul class="undotted">
                         <li>
                             <label class="">
                                 <input type="checkbox" class="">
@@ -88,10 +93,10 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div>
-            <h3>Navigation</h3>
-            <ul>
+            <p class="fonts">Navigation</p>
+            <ul class="undotted">
                 <li>
                     <a href="#">About Us</a>
                 </li>
@@ -113,8 +118,8 @@
             </ul> 
         </div> 
         <div>
-            <h3>Customer Information</h3>
-            <ul>
+            <p class="fonts">Customer Information</p>
+            <ul class="undotted">
                 <li>
                     <a href="#">Contact Us</a>
                 </li>
@@ -136,8 +141,18 @@
             </ul>
         </div>
         <div>
-            <h3>Connect</h3>
-            <ul>
+            <p class="fonts">Connect</p>
+            <form action="#">
+                <div>
+                    <label class="">
+                        <span>Email</span>
+                        <input type="text" class="">
+                    </label>
+                </div>
+    
+                <button type="submit">Join</button>
+            </form>
+            <ul class="undotted">
                 <li>
                     <a href="#">
                         <img src="img/socil/Facebook.svg" alt="">
@@ -160,13 +175,12 @@
                 </li>
             </ul>    
         </div>
-        <p>Company Rating</p>
+        <p class="text">Company Rating</p>
             <img src="img/Group.png" alt="">
-        <p>Copyright © 2018 Dlk • Design Life Kids</p>
-        <div>
-            <a href="#">Web Design — Direct Line Development</a>
-        </div>
+        <p class="text">Copyright © 2018 Dlk • Design Life Kids</p>
+        <a href="#" class="Ablack">Web Design — Direct Line Development</a>
     
         </footer>
+    
 </body>
 </html>
