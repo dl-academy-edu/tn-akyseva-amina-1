@@ -9,9 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header container">
         <a href="/">
             <img src="img/Union.svg" alt="">
         </a>
@@ -32,26 +33,30 @@
             <a href="#">
                 <img src="img/XMLID1397.png" alt="">
         </div>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" class="headerContact">Contact Us</a>
     </header>
 
     <main>
-        <section class="banner">
-            <img src="img/png.png" alt="">
-            <h1>THE OOH NOO COLLECTION</h1>
-            <p>Designed in Slovenia</p>
-            <button class="button">EXPLORE NOW</button>
-            <p>Free (continental) USA shipping on all orders of $100 USD or more!</p>
+        <section class="container">
+            <div class="banner first container">
+                <div class="bannerDiv">
+                    <h1 class="bannerTitle">THE OOH NOO COLLECTION</h1>
+                    <p class="italic">Designed in Slovenia</p>
+                    <button class="button">EXPLORE NOW</button>
+                </div>
+                <img class="bannerImg" src="img/png.png" alt="">
+            </div>
+            <p class="bannerText">Free (continental) USA shipping on all orders of $100 USD or more!</p>
         </section>
 
-        <section>
-            <h2>Category Products</h2>
-            <ul class="undotted">
+        <section class="container">
+            <h2 class="titleService">Category Products</h2>
+            <ul class="serviceList undotted">
                 <li>
-                    <a href="#">APPAREL KIDS</a>
+                    <a href="#">APPAREL<br>KIDS</a>
                 </li>
                 <li>
-                    <a href="#">HOLIDAY SHOP</a>
+                    <a href="#">HOLIDAY<br>SHOP</a>
                 </li>
                 <li>
                     <a href="toys.html">TOYS</a>
@@ -61,17 +66,11 @@
                 </li>
             </ul>
             <div class="banner">
-                <button class="button">
-                    <img src="img/button/button-1.svg" alt="">
-                </button>
-                <button class="button">
-                    <img src="img/button/button.svg" alt="">
-                </button>
                 <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
             </div>
         </section>
 
-        <section>
+        <section class="container">
             <h2>Delivery</h2>
             <img src="img/girl.jpg" alt="">
             <ul class="undotted">
@@ -96,7 +95,7 @@
             </ul>
         </section>
 
-        <section class="awards">
+        <section class="awards container">
             <h2>Awards</h2>
             <div>
                 <img src="img/partners/image-1.png" alt="">
@@ -112,7 +111,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="container">
             <div>
                 <h2>Design Life Kids</h2>
                 <p>About Us</p>
@@ -127,7 +126,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
     <div>
         <p class="fonts">Navigation</p>
         <ul class="undotted">
@@ -254,7 +253,7 @@
                 <ul class="undotted">
                     <li>
                         <label class="">
-                            <input type="checkbox" class="">
+                            <input type="checkbox" class="" checked>
                             <span>By clicking on the button, you consent to the processing of your personal data</span>
                         </label>
                     </li>
