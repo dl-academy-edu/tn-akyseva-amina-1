@@ -4,14 +4,6 @@
     margin-bottom: 0px;
 }
 
-.first::after {
-    content: '';
-    display: block;
-    background: #EEE4DB;
-    width: 1180px;
-    height: 410px;
-}
-
 .bannerDiv{
     margin-left: 130px;
 }
@@ -24,7 +16,7 @@
     color: #1E0606;
 }
 
-.banner .italic {
+.italic {
     font-family: 'Crimson Text';
     font-weight: 400;
     font-size: 20px;
@@ -33,6 +25,8 @@
 
 .bannerImg{
     margin-right: 100px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .bannerText {
@@ -41,11 +35,15 @@
     color: #FFFFFF;
     padding: 11px;
     margin: 0;
+    margin-bottom: 90px;
 }
 
-.titleService{
+.textbottom {
+    margin-bottom: 90px;
+}
+
+.title{
     font-family: 'Montserrat';
-    margin-top: 90px;
     font-weight: 700;
     font-size: 38px;
     line-height: 46px;
@@ -101,4 +99,70 @@
     background-image: url('../img/pursone.png');
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.delivery {
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.deliveryImg {
+    margin-right: 120px;
+}
+
+.deliveryTitle {
+    margin-bottom: 17px;
+}
+
+.deliveruTitls{
+    font-family: 'Crimson Text';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    margin: 22px auto;
+}
+
+.deliveryText {
+    width: 85%;
+    margin-bottom: 15px;
+}
+
+.two {
+    margin-bottom: 26px;
+}
+
+.deliveruTitls:hover {
+    display: block;
+    background: #E2F1F8;
+}
+
+.awards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 90px;
+}
+
+.doubleSection {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.doubleText {
+    width: 75%;
+}
+
+.double1 .doubleText {
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.title2 {
+    margin: 10px auto;
+}
+
+.double1 {
+    margin-left: 30px;
 }

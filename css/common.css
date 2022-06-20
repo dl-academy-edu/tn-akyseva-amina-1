@@ -65,8 +65,16 @@ a {
     background: #434343;
 }
 
+.footerList {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
 .footer .fonts {
     color: #AAAAAA;
+    margin-bottom: 50px;
+    margin-top: 100px;
 }
 
 .footer a , .text {
@@ -75,4 +83,18 @@ a {
 
 .footer .Ablack {
     color: #A2A2A2;
+}
+
+.footerText li {
+    margin-bottom: 15px;
+}
+
+.additionaly1 {
+    display: flex;
+    align-items: center;
+}
+
+.footerSochil {
+    display: flex;
+    align-items: center;
 }
