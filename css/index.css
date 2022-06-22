@@ -4,6 +4,22 @@
     margin-bottom: 0px;
 }
 
+.bannerSection{
+    position: relative;
+}
+
+.bannerSection::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #EEE4DB;
+    width: 1180px;
+    height: 380px;
+    bottom: 40px;
+    left: 0;
+    z-index: -1;
+}
+
 .bannerDiv{
     margin-left: 130px;
 }
@@ -40,6 +56,7 @@
 
 .textbottom {
     margin-bottom: 90px;
+    margin-top: 33px;
 }
 
 .title{
@@ -52,7 +69,7 @@
 
 .serviceList {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .serviceList a {
@@ -101,6 +118,32 @@
     background-repeat: no-repeat;
 }
 
+.serviseButtom1 {
+    background: #E2F1F8;
+    padding: 37px;
+    background-image: url('../img/button/button-1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.serviseButtom2 {
+    background: #E2F1F8;
+    padding: 37px;
+    background-image: url('../img/button/button.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.textbottom p {
+    margin-left: 20px;
+    width: 50%;
+}
+
 .delivery {
     display: flex;
     align-items: center;
@@ -121,6 +164,12 @@
     font-size: 26px;
     line-height: 34px;
     margin: 22px auto;
+    display: block;
+    width: 180px;
+    margin-left: -60px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .deliveryText {
@@ -146,7 +195,7 @@
 
 .doubleSection {
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
@@ -163,6 +212,33 @@
     margin: 10px auto;
 }
 
-.double1 {
+.doublediv1 {
     margin-left: 30px;
+}
+
+.double1 {
+    background: #E1F0F7;
+    padding-bottom: 50px;
+    margin-top: -55px;
+    margin-left: -30px;
+    margin-right: 80px;
+}
+
+.contentdoble1 {
+    padding-top: 30px;
+    padding-left: 30px;
+    width: 120%;
+}
+
+.double2 {
+    background: #E1F0F7;
+    margin-top: -55px;
+    margin-left: -30px;
+    margin-bottom: -40px;
+    padding-bottom: 50px;
+}
+
+.contentdoble2 {
+    padding-top: 30px;
+    padding-left: 30px;
 }

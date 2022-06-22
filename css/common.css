@@ -77,6 +77,10 @@ a {
     margin-top: 100px;
 }
 
+.footerForm div {
+    display: inline-block;
+}
+
 .footer a , .text {
     color: #FFFFFF;
 }
@@ -97,4 +101,10 @@ a {
 .footerSochil {
     display: flex;
     align-items: center;
+}
+
+.footerList2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
