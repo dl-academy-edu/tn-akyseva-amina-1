@@ -1,0 +1,38 @@
+.header {
+    margin-bottom: 57px;
+}
+
+.titlecontact {
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 0px;
+}
+
+.navigation {
+    margin-top: -6px;
+    display: flex;
+    align-items: center;
+}
+
+.navigationPart {
+    margin-right: 20px;
+}
+
+.navigation p {
+    color: #8E8282;
+}
+
+.arrowN {
+    background: transparent;
+    background-image: url('../img/navigation/arrow.svg');
+    width: 8px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.contactBlock {
+    display: flex;
+    margin-bottom: 60px;
+}

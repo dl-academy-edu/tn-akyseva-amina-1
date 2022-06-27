@@ -4,8 +4,51 @@
     margin-bottom: 0px;
 }
 
+.bannerSection{
+    position: relative;
+}
+
+.bannerSection::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #EEE4DB;
+    width: 1180px;
+    height: 385px;
+    bottom: 30px;
+    left: 0;
+    z-index: -1;
+}
+
+.bannerDOP {
+    margin-left: 31px;
+    margin-top: -125px;
+}
+
+.bannerDOP p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 60px;
+    margin-bottom: 27px;
+}
+
+.bannerbutton {
+    width: 31px;
+    height: 3px;
+    border: none;
+    background: #D6CAC2;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bannerDOP button:active {
+    background: #715F5B;
+}
+
 .bannerDiv{
-    margin-left: 130px;
+    margin-left:41px;
+    margin-top: 55px;
+    width: 100%;
 }
 
 .bannerTitle {
@@ -14,13 +57,11 @@
     font-size: 40px;
     line-height: 110%;
     color: #1E0606;
+    margin-bottom: 0px;
 }
 
-.italic {
-    font-family: 'Crimson Text';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
+.banneritalic {
+    margin: 18px auto;
 }
 
 .bannerImg{
@@ -30,6 +71,12 @@
 }
 
 .bannerText {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
     text-align: center;
     background: #C29974;
     color: #FFFFFF;
@@ -40,19 +87,15 @@
 
 .textbottom {
     margin-bottom: 90px;
-}
-
-.title{
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 46px;
-    text-transform: uppercase;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
 }
 
 .serviceList {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 0px;
 }
 
 .serviceList a {
@@ -101,6 +144,35 @@
     background-repeat: no-repeat;
 }
 
+.serviseButtom1 {
+    background: #E2F1F8;
+    padding: 17px;
+    background-image: url('../img/button/button-1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.serviseButtom2 {
+    background: #E2F1F8;
+    padding: 17px;
+    background-image: url('../img/button/button.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.textbottom p {
+    margin-top: 0;
+    margin-left: 20px;
+    margin-bottom: 0;
+    height: 100%;
+    width: 50%;
+}
+
 .delivery {
     display: flex;
     align-items: center;
@@ -111,8 +183,12 @@
     margin-right: 120px;
 }
 
+.deliveryList {
+    margin-top: -31px;
+}
+
 .deliveryTitle {
-    margin-bottom: 17px;
+    margin-bottom: 8px;
 }
 
 .deliveruTitls{
@@ -120,38 +196,55 @@
     font-weight: 400;
     font-size: 26px;
     line-height: 34px;
-    margin: 22px auto;
+    display: block;
+    width: 180px;
+    margin-left: -60px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .deliveryText {
-    width: 85%;
+    width: 82%;
     margin-bottom: 15px;
 }
 
 .two {
-    margin-bottom: 26px;
+    margin-bottom: 40px;
 }
 
-.deliveruTitls:hover {
+.deliveruTitls:active {
     display: block;
+    font-weight: 700;
     background: #E2F1F8;
 }
 
 .awards {
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    margin-bottom: 90px;
+    align-items: center;
+    margin-bottom: 55px;
+    margin-left: -125px;
+}
+
+.awards img {
+    margin-left: 127px;
+}
+
+.awardsTitle {
+    width: 0;
+    height: 0;
+    font-size: 0;
 }
 
 .doubleSection {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 50px;
+    justify-content: center;
+    margin-bottom: 43px;
 }
 
 .doubleText {
-    width: 75%;
+    width: 73%;
 }
 
 .double1 .doubleText {
@@ -160,9 +253,48 @@
 }
 
 .title2 {
-    margin: 10px auto;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+.doublediv1 {
+    margin-left: 30px;
 }
 
 .double1 {
-    margin-left: 30px;
+    background: #E1F0F7;
+    padding-bottom: 35px;
+    margin-top: -55px;
+    margin-left: -30px;
+    margin-right: 60px;
+}
+
+.contentdoble1 {
+    padding-top: 30px;
+    padding-left: 30px;
+    width: 120%;
+}
+
+.double2 {
+    background: #E1F0F7;
+    margin-top: -55px;
+    padding-bottom: 85px;
+    margin-right: 35px;
+}
+
+.contentdoble2 {
+    padding-top: 30px;
+    padding-left: 25px;
+    width: 120%;
+}
+
+.doublediv2 h2 {
+    margin-left: 25px;
+}
+
+.doublediv2 img {
+    margin-left: 25px;
+    margin-top: -70px;
 }
