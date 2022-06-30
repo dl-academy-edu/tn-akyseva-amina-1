@@ -298,3 +298,41 @@
     margin-left: 25px;
     margin-top: -70px;
 }
+
+.contactTitleHidden {
+    font-size: 0%;
+}
+
+.contactform {
+    width: 680px;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(125, 151, 218, 0.8);
+    display: none;
+}
+
+.popupOpen {
+    display: flex;
+}
+
+.contactform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popupClose {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    cursor: pointer;
+}

@@ -43,7 +43,7 @@ a {
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
-    margin-left: 20px;
+    margin-left: 28px;
 }
 
 .header .menu {
@@ -124,10 +124,26 @@ a {
     align-items: center;
 }
 
+.EmailSpan {
+    font-size: 0;
+}
+
+.EmailInput {
+    background: #666666;
+    padding: 5px 13px;
+    margin-right: 0;
+    border: none;
+    width: 280px;
+}
+
+.emailButton {
+    margin-left: -20px;
+}
+
 .footerSochil {
     display: flex;
     align-items: center;
-    margin-top: 28px;
+    margin-top: 8px;
 }
 
 .footerSochil li {
@@ -196,8 +212,10 @@ input {
 
 .fieldset {
     margin: 0;
+    margin-top: -5px;
     padding: 0;
     border: none;
+    margin-bottom: 19px;
 }
 
 .fieldset span {
@@ -207,6 +225,78 @@ input {
 
 fieldset {
     border: none;
-    padding: 0
-    ;
+    padding: 0;
+}
+
+.checkboxInput {
+    display: none;
+}
+
+.checkboxSpan {
+    position: relative;
+    cursor: pointer;
+    padding-left: 35px;
+}
+
+.checkboxSpan::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #C29974;
+    border-radius: 3px;
+    background: transparent;
+    top: 0;
+    left: 0;
+}
+
+.checkboxSpan::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/navigation/okey.svg');
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 4px;
+}
+
+.checkboxInput:checked + .checkboxSpan::after {
+    opacity: 0;
+}
+
+/* Навигация */
+
+.navigation {
+    margin-top: -6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.navigationPart {
+    margin-right: 46px;
+}
+
+.navigation p {
+    color: #8E8282;
+}
+
+.navArrow {
+    position: relative;
+}
+
+.navArrow::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('../img/navigation/arrow.svg');
+    right: -27px;
+    top: 7px;
+    width: 8px;
+    height: 12px;
 }

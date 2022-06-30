@@ -14,7 +14,7 @@
 <body>
     <header class="header container">
         <a href="/">
-            <img src="img/Union.svg" alt="">
+            <img src="img/union.svg" alt="">
         </a>
         <nav>
             <ul class="menu undotted">
@@ -31,7 +31,7 @@
         </nav>
         <div>
             <a href="#">
-                <img src="img/XMLID1397.png" alt="">
+                <img src="img/glass.png" alt="">
         </div>
         <a href="contact.html" class="headerContact">Contact Us</a>
     </header>
@@ -49,7 +49,7 @@
                 <div class="bannerDiv">
                     <h1 class="bannerTitle">THE OOH NOO COLLECTION</h1>
                     <p class="italic banneritalic">Designed in Slovenia</p>
-                    <button class="button">EXPLORE NOW</button>
+                    <button class="button popupOpen">EXPLORE NOW</button>
                 </div>
                 <img src="img/png.png" alt="" class="bannerImg">
             </div>  
@@ -86,7 +86,7 @@
             <div class="deliveryList">
                 <ul class="undotted">
                     <legend class="title deliveryTitle">Delivery</legend>
-                    <li class="deliveruTitls">
+                    <li class="deliveruTitls deliveryChecked">
                         <a href="">Delivery</a>
                     </li>
                     <li class="deliveruTitls">
@@ -197,13 +197,13 @@
                             <div>
                                 <div>
                                     <label class="">
-                                        <span>Email</span>
-                                        <input type="text" class="">
+                                        <span class="EmailSpan">Email</span>
+                                        <input type="text" class="EmailInput" placeholder="Email">
                                     </label>
                                 </div>
                             </div>
                             <div>
-                                <button class="button" type="submit">Join</button>
+                                <button class="button emailButton" type="submit">Join</button>
                             </div>
                         </form> 
                     </div>
@@ -234,7 +234,7 @@
             <div class="footerList2 container">
                 <div class="additionaly1 footerdivWidth">
                     <p class="text">Company Rating</p>
-                    <img src="img/Group.png" alt="">
+                    <img src="img/group.png" alt="">
                 </div>
                 <div class="additionaly2 footerdivWidth">
                     <p class="text">Copyright © 2018 Dlk • Design Life Kids</p>
@@ -246,24 +246,24 @@
         </div>
     </footer>
 
-    <section>
-        <h2>Contact</h2>
-        <form action="#">
+    <section class="popup">
+        <h2 class="contactTitleHidden">Contact</h2>
+        <form action="#" class="contactform">
             <div>
-                <label class="">
+                <label class="labelWrapper">
                     <span>Name</span>
                     <input type="text" class="" placeholder="Ivan Ivanov">
                 </label>
             </div>
-            <div>
-                <div>
-                    <label class="">
+            <div class="labelColoms">
+                <div class="labelColoms1">
+                    <label class="labelWrapper">
                         <span>Phone</span>
                         <input type="tel" class="">
                     </label>
                 </div>
                 <div>
-                    <label class="">
+                    <label class="labelWrapper">
                         <span>Email</span>
                         <input type="email" class="">
                     </label>
@@ -271,26 +271,32 @@
             </div>
 
             <div>
-                <label class="">
+                <label class="labelWrapper">
                     <span>Message</span>
-                    <textarea name="" cols="30" rows="10" class=""></textarea>
+                    <textarea name="" cols="30" rows="10" class="textarea"></textarea>
                 </label>
             </div>
 
-            <fieldset>
-                <legend hidden>Agreement</legend>
+            <fieldset class="fieldset" >
+                <legend class="agreement">Agreement</legend>
                 <ul class="undotted">
                     <li>
-                        <label class="">
-                            <input type="checkbox" class="" checked>
-                            <span>By clicking on the button, you consent to the processing of your personal data</span>
+                        <label class="fieldset">
+                            <input type="checkbox" class="checkboxInput">
+                            <span class="checkboxSpan">By clicking on the button, you consent to the processing of your personal data</span>
                         </label>
                     </li>
                 </ul>
             </fieldset>
 
-            <button type="submit">Submit</button>
+            <button type="submit" class="button">Submit</button>
+            <button class="popupClose"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
+                </svg>
+            </button>
         </form>
     </section>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
