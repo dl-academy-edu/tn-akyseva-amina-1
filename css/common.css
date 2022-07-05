@@ -61,6 +61,12 @@ a {
     margin-right: 20px;
 }
 
+.hiddenTitle {
+    width: 0;
+    height: 0;
+    font-size: 0; 
+}
+
 .undotted {
     list-style-type: none;
     margin: 0%;
@@ -328,12 +334,11 @@ fieldset {
     margin-left: 33px;
 }
 
-.PageBtnL {
-    margin-left: 0;
-    margin-right: auto;
+.PageBtnL , .PageBtnR {
+    margin-right: 0;
+    margin-left: auto;
     display: block;
     border: none;
-    background-image: url('../img/button/pbtnl.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: transparent;
@@ -342,16 +347,10 @@ fieldset {
     cursor: pointer;
 }
 
+.PageBtnL {
+    background-image: url('../img/button/pbtnl.svg');
+}
+
 .PageBtnR {
-    margin-right: 0;
-    margin-left: auto;
-    display: block;
-    border: none;
     background-image: url('../img/button/pbynr.svg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: transparent;
-    width: 16px;
-    height: 30px;
-    cursor: pointer;
 }
