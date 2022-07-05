@@ -61,6 +61,12 @@ a {
     margin-right: 20px;
 }
 
+.hiddenTitle {
+    width: 0;
+    height: 0;
+    font-size: 0; 
+}
+
 .undotted {
     list-style-type: none;
     margin: 0%;
@@ -263,10 +269,19 @@ fieldset {
     background-repeat: no-repeat;
     top: 0px;
     left: 4px;
+    opacity: 0;
+}
+
+.textarea {
+    max-height: 140px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 0px;
+    resize: none;
 }
 
 .checkboxInput:checked + .checkboxSpan::after {
-    opacity: 0;
+    opacity: 1;
 }
 
 /* Навигация */
@@ -299,4 +314,43 @@ fieldset {
     top: 7px;
     width: 8px;
     height: 12px;
+}
+
+/* Page */
+
+.page {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+}
+
+.page a {
+    margin-right: 32px;
+    margin-left: 33px;
+}
+
+.PageBtnL , .PageBtnR {
+    margin-right: 0;
+    margin-left: auto;
+    display: block;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    width: 16px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.PageBtnL {
+    background-image: url('../img/button/pbtnl.svg');
+}
+
+.PageBtnR {
+    background-image: url('../img/button/pbynr.svg');
 }

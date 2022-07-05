@@ -92,6 +92,10 @@
     align-items: center;
 }
 
+.serviseW {
+    width: 95%;
+}
+
 .serviceList {
     display: flex;
     justify-content: space-between;
@@ -111,28 +115,33 @@
 
 .serviceList li:nth-child(1) {
     background: #DBE4DB;
-    padding: 100px 75px;
+    padding: 104px 30px;
+    padding-left: 45px;
     background-image: url('../img/sweater.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 244px 177px;
+    margin-right: 20px;
 }
 
 .serviceList li:nth-child(2) {
     background: #EADDD3;
-    padding: 100px 75px;
+    padding: 103px 34px;
+    padding-left: 42px;
     background-image: url('../img/sock.png');
     background-position: center;
     background-repeat: no-repeat;
+    margin-right: 20px;
 }
 
 
 .serviceList li:nth-child(3) {
     background: #F8F2DA;
-    padding: 120px 100px;
+    padding: 120px 103px;
     background-image: url('../img/animal.png');
     background-position: center;
     background-repeat: no-repeat;
+    margin-right: 20px;
 }
 
 
@@ -167,10 +176,14 @@
 
 .textbottom p {
     margin-top: 0;
-    margin-left: 20px;
+    margin-left: 22px;
     margin-bottom: 0;
     height: 100%;
     width: 50%;
+}
+
+.textbottom {
+    margin-top: 28px;
 }
 
 .delivery {
@@ -229,12 +242,6 @@
 
 .awards img {
     margin-left: 127px;
-}
-
-.awardsTitle {
-    width: 0;
-    height: 0;
-    font-size: 0;
 }
 
 .doubleSection {
