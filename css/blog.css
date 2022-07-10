@@ -48,3 +48,8 @@
     color: #818181;
     margin-bottom: 8px;
 }
+
+.blogOpacity:hover,
+.blogOpacity:active {
+    text-decoration: underline solid #1E0606;;
+}
