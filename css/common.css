@@ -31,6 +31,14 @@ a {
     color: #1E0606;
 }
 
+.headerOpasity:hover {
+    opacity: .5;
+}
+
+.headerOpasity:active {
+    opacity: .2;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -83,6 +91,18 @@ a {
     padding: 9px 22px;
 }
 
+.button:hover {
+    background: #C29974;
+}
+
+.button:active {
+    background: #CFAF91;
+}
+
+.button:disabled {
+    background: #C7C1C1;
+}
+
 .footer {
     background: #434343;
 }
@@ -128,6 +148,7 @@ a {
 .additionaly1 {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .EmailSpan {
@@ -140,10 +161,13 @@ a {
     margin-right: 0;
     border: none;
     width: 280px;
+    height: 29px;
 }
 
 .emailButton {
     margin-left: -20px;
+    width: 81px;
+    height: 40px;
 }
 
 .footerSochil {
@@ -169,8 +193,42 @@ a {
     width: 380px;
 }
 
+.footer:hover .EmailInput {
+    border: 1px solid #FFFDFD;
+    height: 27px;
+}
+
+.footerOpacity:hover {
+    opacity: 0.5;
+}
+
+.footerOpacity:active {
+    opacity: 0.2;
+}
+
+.footerList2 .footerdivWidth a:hover,
+.footerList2 .footerdivWidth a:active {
+    text-decoration: underline solid #FFFFFF;
+    color: #FFFFFF;
+}
+
 .additionaly1 p {
     margin-right: 25px;
+}
+
+.additionaly1:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('../img/group2.png');
+    width: 97px;
+    height: 16px;
+    top: 19px;
+    left: 146px;
+}
+
+.additionaly1:hover p {
+    color: #C29974;
 }
 
 .contactform {
@@ -180,7 +238,7 @@ a {
 }
 
 input {
-    border: 1px solid #ccc;
+    outline: none;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
@@ -188,6 +246,21 @@ input {
     padding: 14px 20px;
     background: #FFFFFF;
     margin-bottom: 20px;
+}
+
+.inputBorder {
+    border: 1px solid #ccc;
+}
+
+.inputBorder:active,
+.inputBorder:hover {
+    border: 1px solid #C29974;
+    z-index: 1;
+}
+
+input:disabled,
+.textarea:disabled {
+    opacity: 0.2;
 }
 
 .labelWrapper {
@@ -273,15 +346,22 @@ fieldset {
 }
 
 .textarea {
+    outline: none;
     max-height: 140px;
     background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.2);
     margin-top: 0px;
     resize: none;
 }
 
 .checkboxInput:checked + .checkboxSpan::after {
     opacity: 1;
+}
+
+.radioSpan:hover,
+.radioSpan:active,
+.checkboxSpan:hover,
+.checkboxSpan:active {
+    text-decoration: underline solid #1E0606;
 }
 
 /* Навигация */
@@ -334,9 +414,15 @@ fieldset {
     margin-left: 33px;
 }
 
+.pageOpacityChecked {
+    color: #C29974;
+}
+
+.pageOpacity:hover {
+    opacity: 0.5;
+}
+
 .PageBtnL , .PageBtnR {
-    margin-right: 0;
-    margin-left: auto;
     display: block;
     border: none;
     background-repeat: no-repeat;
@@ -349,8 +435,35 @@ fieldset {
 
 .PageBtnL {
     background-image: url('../img/button/pbtnl.svg');
+    margin-right: auto;
+    margin-left: 0;
 }
 
 .PageBtnR {
     background-image: url('../img/button/pbynr.svg');
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* Критерии */
+
+.BcgIMG {
+    background: #E1F0F7;
+}
+
+.PageBtnR:hover {
+    background-image: url('../img/button/arrowrighthover.svg');
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.PageBtnL:hover {
+    background-image: url('../img/button/arrowlefthover.svg');
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.PageBtnR:hover:active,
+.PageBtnL:hover:active {
+    opacity: 0.6;
 }

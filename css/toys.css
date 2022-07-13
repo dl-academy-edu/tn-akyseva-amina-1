@@ -211,6 +211,11 @@
     opacity: 1;
 }
 
+.radioSpanN:hover {
+    background: #F3D0DB;
+    opacity: 0.5;
+}
+
 .searchButton {
     margin-left: 58px;
     margin-top: 37px;
@@ -247,4 +252,31 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+}
+
+.toysOpacity {
+    position: relative;
+}
+
+.toysOpacity:hover::after,
+.toysOpacity:active::after {
+    content: 'LEARN MORE';
+    padding: 82px 12px 96px 11px;
+    position: absolute;
+    background: #E5EAF8;
+    left: 89px;
+    top: 87px;
+    z-index: 1;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+
+.toysOpacity:active::after {
+    opacity: 0.6;
 }
