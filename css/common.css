@@ -31,12 +31,13 @@ a {
     color: #1E0606;
 }
 
-.headerOpasity:hover {
-    opacity: .5;
+.headerOpasity:hover,
+.headerOpasity:focus {
+    opacity: 0.5;
 }
 
 .headerOpasity:active {
-    opacity: .2;
+    opacity: 0.2;
 }
 
 .header {
@@ -72,7 +73,10 @@ a {
 .hiddenTitle {
     width: 0;
     height: 0;
-    font-size: 0; 
+    font-size: 0;
+    margin: 0;
+    padding: 0; 
+    line-height: 0;
 }
 
 .undotted {
@@ -91,7 +95,8 @@ a {
     padding: 9px 22px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     background: #C29974;
 }
 
@@ -193,12 +198,14 @@ a {
     width: 380px;
 }
 
-.footer:hover .EmailInput {
+.EmailInput:hover,
+.EmailInput:focus {
     border: 1px solid #FFFDFD;
     height: 27px;
 }
 
-.footerOpacity:hover {
+.footerOpacity:hover,
+.footerOpacity:focus {
     opacity: 0.5;
 }
 
@@ -253,7 +260,8 @@ input {
 }
 
 .inputBorder:active,
-.inputBorder:hover {
+.inputBorder:hover,
+.inputBorder:focus {
     border: 1px solid #C29974;
     z-index: 1;
 }
@@ -360,7 +368,9 @@ fieldset {
 .radioSpan:hover,
 .radioSpan:active,
 .checkboxSpan:hover,
-.checkboxSpan:active {
+.checkboxSpan:active,
+.checkboxSpan:focus,
+.radioSpan:focus {
     text-decoration: underline solid #1E0606;
 }
 
@@ -418,7 +428,8 @@ fieldset {
     color: #C29974;
 }
 
-.pageOpacity:hover {
+.pageOpacity:hover,
+.pageOpacity:focus {
     opacity: 0.5;
 }
 
@@ -451,13 +462,15 @@ fieldset {
     background: #E1F0F7;
 }
 
-.PageBtnR:hover {
+.PageBtnR:hover,
+.PageBtnR:focus {
     background-image: url('../img/button/arrowrighthover.svg');
     margin-right: 0;
     margin-left: auto;
 }
 
-.PageBtnL:hover {
+.PageBtnL:hover,
+.PageBtnL:focus{
     background-image: url('../img/button/arrowlefthover.svg');
     margin-right: auto;
     margin-left: 0;
@@ -466,4 +479,11 @@ fieldset {
 .PageBtnR:hover:active,
 .PageBtnL:hover:active {
     opacity: 0.6;
+}
+
+.CategoryHover:active,
+.CategoryHover:hover,
+.CategoryHover:focus {
+    text-decoration: underline solid #FFFFFF;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }

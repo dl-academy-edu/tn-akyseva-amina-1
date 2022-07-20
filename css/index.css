@@ -173,12 +173,6 @@
     cursor: pointer;
 }
 
-.CategoryHover:active,
-.CategoryHover:hover {
-    text-decoration: underline solid #FFFFFF;
-    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
-}
-
 .serviseButtom2 {
     background: #E2F1F8;
     padding: 17px;
