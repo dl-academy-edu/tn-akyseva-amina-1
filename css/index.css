@@ -198,7 +198,7 @@
 
 .delivery {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 90px;
 }
 
@@ -207,7 +207,7 @@
 }
 
 .deliveryList {
-    margin-top: -81px;
+    margin-top: -32px;
 }
 
 .deliveryTitle {
@@ -307,15 +307,19 @@
 .contentdoble2 {
     padding-top: 30px;
     padding-left: 25px;
-    width: 120%;
+    width: 520px;
+}
+
+.contentdoble2Text {
+    width: 93%;
 }
 
 .doublediv2 h2 {
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
 .doublediv2 .BcgIMG {
-    margin-left: 25px;
+    margin-left: 30px;
     margin-top: -70px;
 }
 
